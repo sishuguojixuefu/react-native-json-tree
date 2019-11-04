@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "prop-types": "^15.6.0",
-    "@sishuguojixuefu/react-base16-styling": "0.4.6"
+    "@sishuguojixuefu/react-base16-styling": "0.4.7"
   },
   "description": "React Native JSON viewing component, based on react-json-tree",
   "devDependencies": {

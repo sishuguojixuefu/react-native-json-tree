@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, View } from 'react-native';
+import { Text, View, Dimensions } from 'react-native';
 import JSONNode from './JSONNode';
 import createStylingFromTheme from './createStylingFromTheme';
+
+var {width} =  Dimensions.get('window');
 
 const identity = value => value;
 
@@ -89,7 +91,8 @@ class JSONTree extends React.Component {
     const styling = createStylingFromTheme(checkLegacyTheming(theme, rest), invertTheme);
 
     return (
-      <View {...styling('tree')}>
+      <View style={{width:400,height:600,flex:1,backgroundColor:'#000'}} {...styling('tree')}>
+        <Text style={{width:width,height:1}}/>
         <JSONNode
           hideRoot={hideRoot}
           keyPath={hideRoot ? [] : keyPath}

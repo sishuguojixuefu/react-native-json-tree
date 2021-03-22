@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "prop-types": "^15.6.0",
-    "@sishuguojixuefu/react-base16-styling": "0.4.8"
+    "@sishuguojixuefu/react-base16-styling": "^0.4.9"
   },
   "description": "React Native JSON viewing component, based on react-json-tree",
   "devDependencies": {
@@ -54,5 +54,5 @@
     "test": "NODE_ENV=test jest",
     "start": "cd Examples && npm start"
   },
-  "version": "1.2.4"
+  "version": "1.2.5"
 }
